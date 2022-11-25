@@ -4,7 +4,7 @@ import React from 'react'
 export default function Details() {
   return (
     <View>
-      <Text>Details</Text>
+      <Text className="items-center text-green-700">Details</Text>
     </View>
   )
 }
