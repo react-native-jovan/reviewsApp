@@ -5,6 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { TailwindProvider } from 'tailwindcss-react-native';
 import Home from './src/screens/Home';
 import { AppLoading } from 'expo';
+import Navigator from './routes/homeStack'
 
 
 const getFonts=()=>{
@@ -19,7 +20,7 @@ export default function App() {
   if (fontLoaded) {
     return (
       <TailwindProvider>   
-          <Home/>
+          <Navigator/>
       </TailwindProvider>
     );   
   }else{
