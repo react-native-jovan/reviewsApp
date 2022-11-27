@@ -3,13 +3,14 @@ import { createAppContainer } from "react-navigation";
 import Home from "../src/screens/Home";
 import Details from "../src/screens/Details";
 import About from "../src/screens/About";
-import Header from "../components/Header";
-import React from "react";
 const screens={
+  Abouts:{
+    screen: About
+},
     Home: {
         screen: Home,
         navigationOptions:{
-            headerTitle:()=><Header/>,
+            title:'About GameZone',
             headerStyle:{
                 backgroundColor:'#333',
                 
@@ -25,11 +26,9 @@ const screens={
             // }
         }
     },
-    Abouts:{
-        screen: About
-    }
+
 }
-const HomeStack=createStackNavigator(screens,{
+const AboutStack=createStackNavigator(screens,{
     defaultNavigationOptions:{
         headerTintColor:'white',
         headerStyle:{
@@ -39,4 +38,4 @@ const HomeStack=createStackNavigator(screens,{
     }
 })
 
-export default createAppContainer(HomeStack)
+export default AboutStack;

@@ -14,7 +14,10 @@ const getFonts=()=>{
     'nunito-medium': require('./assets/fonts/Nunito-Medium.ttf'),
   })
 }
+
+
 export default function App() {
+  
 
   const [fontLoaded,setFontsLoaded]=useState(false)
   if (fontLoaded) {
@@ -33,4 +36,32 @@ export default function App() {
   }
   
 }
+
+
+
+//In App.js in a new project
+
+
+//   import Home from './src/screens/Home';
+//   import { TailwindProvider } from 'tailwindcss-react-native';
+
+//   import * as React from 'react';
+
+//   import { createDrawerNavigator } from '@react-navigation/drawer';
+//   import { NavigationContainer } from '@react-navigation/native';
+
+
+//   const Drawer = createDrawerNavigator();
+  
+//   export default function App() {
+//     return (
+//       <TailwindProvider>
+//       <NavigationContainer>
+//         <Drawer.Navigator initialRouteName="Home">
+//           <Drawer.Screen name="Home" component={Home} />
+//           <Drawer.Screen name="Abouts" component={Abouts} />
+//         </Drawer.Navigator>
+//       </NavigationContainer></TailwindProvider>
+//     );
+//   }
 
