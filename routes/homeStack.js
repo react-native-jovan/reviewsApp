@@ -11,7 +11,7 @@ const screens={
         navigationOptions:{
             headerTitle:()=><Header/>,
             headerStyle:{
-                backgroundColor:'#333',
+                backgroundColor:'red',
                 
             }
         }

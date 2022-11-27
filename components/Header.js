@@ -5,11 +5,11 @@ import {MaterialIcons} from '@expo/vector-icons';
 
 export default function Header() {
   return (
-    <View className='w-screen h-[100%] flex flex-row items-center justify-center'>
-
+    <View className='w-full h-full flex flex-row items-center justify-between'>
+        <MaterialIcons name="menu" size={24} color="white"/>
 
       <View>
-        <Text className=''>Header</Text>
+        <Text className='text-white text-lg'>Header</Text>
       </View>
     </View>
   )

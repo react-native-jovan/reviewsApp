@@ -4,8 +4,8 @@ import React from 'react'
 export default function About({navigation}) {
 
   function pressHandler(props){
-    // navigation.navigate('Abouts')
-    navigation.goBack()
+    navigation.navigate('Home')
+    // navigation.goBack()
   }
 
   return (
